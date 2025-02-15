@@ -87,10 +87,10 @@ This project focuses on detecting fraud through two different models:
 ---
 
 ## 6. References
-- [Tutorial 1: SVM](https://www.youtube.com/watch?v=Y6RRHw9uN9o)
+- [Tutorial 1: SVM](https://www.geeksforgeeks.org/classifying-data-using-support-vector-machinessvms-in-python/)
 - [Tutorial 2: NLP Model Basics](https://medium.com/analytics-vidhya/natural-language-processing-nlp-workflow-tutorial-for-binary-classification-in-sci-kit-learn-b9f94c6aaf14)
 - [Tutorial 3: Multinomial Naive Bayes](https://www.youtube.com/watch?v=Thz4WzC3UdM)
-- [Dataset 2: URL-based Fraud Detection](#)
+- [Tutorial 4: Gaussian Naive Bayes](https://www.geeksforgeeks.org/gaussian-naive-bayes/)
 
 ---
 
