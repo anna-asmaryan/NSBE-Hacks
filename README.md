@@ -88,6 +88,7 @@ This project focuses on detecting fraud through two different models:
 ## 6. References
 - [Tutorial 1: SVM](https://www.youtube.com/watch?v=Y6RRHw9uN9o)
 - [Tutorial 2: NLP Model Basics](https://medium.com/analytics-vidhya/natural-language-processing-nlp-workflow-tutorial-for-binary-classification-in-sci-kit-learn-b9f94c6aaf14)
+- [Tutorial 3: Multinomial Naive Bayes] (https://www.youtube.com/watch?v=Thz4WzC3UdM)
 - [Dataset 2: URL-based Fraud Detection](#)
 
 ---
