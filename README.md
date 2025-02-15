@@ -1,10 +1,3 @@
-# NSBE-Hacks
-NSBE Hacks project Anti-Fraud AI
-https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset?select=Nazario.csv
-
-NLP models for email phishing detection
-support vector machine: https://www.youtube.com/watch?v=Y6RRHw9uN9o
-
 # Fraud Detection Project
 
 ## Team Members
@@ -94,7 +87,7 @@ This project focuses on detecting fraud through two different models:
 
 ## 6. References
 - [Tutorial 1: SVM](https://www.youtube.com/watch?v=Y6RRHw9uN9o)
-- [Tutorial 2: Website URL Fraud Detection](#)
+- [Tutorial 2: NLP Model Basics](https://medium.com/analytics-vidhya/natural-language-processing-nlp-workflow-tutorial-for-binary-classification-in-sci-kit-learn-b9f94c6aaf14)
 - [Dataset 2: URL-based Fraud Detection](#)
 
 ---
