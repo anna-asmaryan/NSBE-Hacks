@@ -91,7 +91,36 @@ This project focuses on detecting fraud through two different models:
 - [Tutorial 2: NLP Model Basics](https://medium.com/analytics-vidhya/natural-language-processing-nlp-workflow-tutorial-for-binary-classification-in-sci-kit-learn-b9f94c6aaf14)
 - [Tutorial 3: Multinomial Naive Bayes](https://www.youtube.com/watch?v=Thz4WzC3UdM)
 - [Tutorial 4: Gaussian Naive Bayes](https://www.geeksforgeeks.org/gaussian-naive-bayes/)
-
+- Logistic Regression Template:
+  ```
+  from sklearn.linear_model import LogisticRegression
+  from sklearn.preprocessing import StandardScaler
+  from sklearn.metrics import accuracy_score
+  
+  # Instantiate the transformer object
+  std_scaler = StandardScaler()
+  
+  # Fit to data (subtract mean and divide by SD for each column)
+  X = std_scaler.fit_transform(X)
+  
+  # Instantiate the model object
+  logit = LogisticRegression(fit_intercept = True, max_iter=1000, penalty = 'none')
+  
+  # Fit the model to the data
+  logit.fit(X, t.ravel()) # Use reval so array is passed to the function
+  
+  # Examine the coefficients and intercept
+  print('Logistic Regression Coefficients:\n',logit.coef_)
+  print('Intercept:\n', logit.intercept_)
+  
+  # Get fitted values from training set
+  t_train_preds_lr = logit.predict(X)
+  
+  # Print train and test errors
+  train_acc = accuracy_score(t, t_train_preds_lr)
+  
+  print('Train Accuracy: ',train_acc)
+  ```
 ---
 
 ## Notes & Next Steps
