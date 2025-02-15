@@ -1,7 +1,7 @@
 # Fraud Detection Project
 
 ## Team Members
-- [Your Names Here]
+- 
 
 ## Project Overview
 This project focuses on detecting fraud through two different models:
