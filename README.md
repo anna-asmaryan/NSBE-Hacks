@@ -56,7 +56,8 @@ This project focuses on detecting fraud through two different models:
 - **Approach**: URL-based feature extraction and classification
 - **Algorithms Considered**:
   - Random Forest
-  - Neural Networks
+  - XGBoost
+  - KNN
 - **Libraries Used**:
   - `Scikit-learn`
 - **Pipeline**:
