@@ -6,7 +6,7 @@
 ## Project Overview
 This project focuses on detecting fraud through two different models:
 1. **Email Phishing Detection**: Using Natural Language Processing (NLP) for binary classification.
-2. **Website Fraud Detection**: Analyzing website URLs and tokens for potential fraud detection.
+2. **Front End Extension**: Creating chrome extension
 
 ## Table of Contents
 - [1. Dataset](#dataset)
@@ -52,22 +52,6 @@ This project focuses on detecting fraud through two different models:
 
 ---
 
-## 3. Website Fraud Detection Model
-- **Approach**: URL-based feature extraction and classification
-- **Algorithms Considered**:
-  - Random Forest
-  - XGBoost
-  - KNN
-- **Libraries Used**:
-  - `Scikit-learn`
-- **Pipeline**:
-  1. Extract URL-based Features
-  2. Feature Engineering
-  3. Model Training & Tuning
-  4. Evaluation
-
----
-
 ## 4. Implementation Plan
 | Task | Assigned To | Deadline |
 |------|------------|----------|
@@ -90,7 +74,7 @@ This project focuses on detecting fraud through two different models:
 - [Tutorial 1: SVM](https://www.geeksforgeeks.org/classifying-data-using-support-vector-machinessvms-in-python/)
 - [Tutorial 2: NLP Model Basics](https://medium.com/analytics-vidhya/natural-language-processing-nlp-workflow-tutorial-for-binary-classification-in-sci-kit-learn-b9f94c6aaf14)
 - [Tutorial 3: Multinomial Naive Bayes](https://www.youtube.com/watch?v=Thz4WzC3UdM)
-- [Tutorial 4: Gaussian Naive Bayes](https://www.geeksforgeeks.org/gaussian-naive-bayes/)
+- [Tutorial 4: Naive Bayes](https://www.geeksforgeeks.org/applying-multinomial-naive-bayes-to-nlp-problems/)
 - Logistic Regression Template:
   ```
   from sklearn.linear_model import LogisticRegression
