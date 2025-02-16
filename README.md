@@ -110,3 +110,5 @@ This project focuses on detecting fraud through two different models:
 
 ## Notes & Next Steps
 - regex for emails: [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}
+- regex for textbody: (?:\r?\n\r?\n)([\s\S]+)
+
