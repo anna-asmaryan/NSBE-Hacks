@@ -1,7 +1,10 @@
 # Fraud Detection Project
 
 ## Team Members
-- 
+- Afra
+- Anna
+- Rodoshi 
+- Seemal 
 
 ## Project Overview
 This project focuses on detecting fraud through two different models:
