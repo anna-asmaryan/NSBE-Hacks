@@ -13,12 +13,18 @@ This project focuses on detecting fraud through two different models:
 2. **Front End Extension**: Creating chrome extension
 
 ## Table of Contents
-- [1. Dataset](#dataset)
-- [2. Email Phishing Detection Model](#email-phishing-detection-model)
-- [3. Website Fraud Detection Model](#website-fraud-detection-model)
-- [4. Implementation Plan](#implementation-plan)
-- [5. Evaluation Metrics](#evaluation-metrics)
-- [6. References](#references)
+- [Fraud Detection Project ](#fraud-detection-project-)
+  - [Team Members](#team-members)
+  - [Project Overview](#project-overview)
+  - [Table of Contents](#table-of-contents)
+  - [1. Dataset](#1-dataset)
+    - [Email Phishing Dataset](#email-phishing-dataset)
+    - [Website URL Dataset](#website-url-dataset)
+  - [2. Email Phishing Detection Model](#2-email-phishing-detection-model)
+  - [4. Implementation Plan](#4-implementation-plan)
+  - [5. Evaluation Metrics](#5-evaluation-metrics)
+  - [6. References](#6-references)
+  - [Notes \& Next Steps](#notes--next-steps)
 
 ---
 
@@ -117,4 +123,3 @@ This project focuses on detecting fraud through two different models:
 ## Notes & Next Steps
 - regex for emails: [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}
 - regex for textbody: (?:\r?\n\r?\n)([\s\S]+)
-
