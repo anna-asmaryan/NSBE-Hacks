@@ -79,6 +79,8 @@ This project focuses on detecting fraud through two different models:
 - [Tutorial 2: NLP Model Basics](https://medium.com/analytics-vidhya/natural-language-processing-nlp-workflow-tutorial-for-binary-classification-in-sci-kit-learn-b9f94c6aaf14)
 - [Tutorial 3: Multinomial Naive Bayes](https://www.youtube.com/watch?v=Thz4WzC3UdM)
 - [Tutorial 4: Naive Bayes](https://www.geeksforgeeks.org/applying-multinomial-naive-bayes-to-nlp-problems/)
+- [Tutorial 5: Logistic Regression in Python](https://realpython.com/logistic-regression-python/#multi-variate-logistic-regression)
+- [Tutorial 6: Text Classification Using Linear Regression](https://www.geeksforgeeks.org/text-classification-using-logistic-regression/)
 - Logistic Regression Template:
   ```
   from sklearn.linear_model import LogisticRegression
