@@ -24,4 +24,3 @@ document.addEventListener("click", function (event) {
         }, 1000); // Delay to allow Gmail to load email content
     }
 });
-
