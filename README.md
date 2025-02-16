@@ -1,20 +1,30 @@
-# Fraud Detection Project
+# Fraud Detection Project ![phishing-icon-48](https://github.com/user-attachments/assets/1ed687d1-5842-4246-8621-058389f16323)
+
 
 ## Team Members
-- [Your Names Here]
+- Afra
+- Anna
+- Rodoshi 
+- Seemal 
 
 ## Project Overview
 This project focuses on detecting fraud through two different models:
 1. **Email Phishing Detection**: Using Natural Language Processing (NLP) for binary classification.
-2. **Website Fraud Detection**: Analyzing website URLs and tokens for potential fraud detection.
+2. **Front End Extension**: Creating chrome extension
 
 ## Table of Contents
-- [1. Dataset](#dataset)
-- [2. Email Phishing Detection Model](#email-phishing-detection-model)
-- [3. Website Fraud Detection Model](#website-fraud-detection-model)
-- [4. Implementation Plan](#implementation-plan)
-- [5. Evaluation Metrics](#evaluation-metrics)
-- [6. References](#references)
+- [Fraud Detection Project ](#fraud-detection-project-)
+  - [Team Members](#team-members)
+  - [Project Overview](#project-overview)
+  - [Table of Contents](#table-of-contents)
+  - [1. Dataset](#1-dataset)
+    - [Email Phishing Dataset](#email-phishing-dataset)
+    - [Website URL Dataset](#website-url-dataset)
+  - [2. Email Phishing Detection Model](#2-email-phishing-detection-model)
+  - [4. Implementation Plan](#4-implementation-plan)
+  - [5. Evaluation Metrics](#5-evaluation-metrics)
+  - [6. References](#6-references)
+  - [Notes \& Next Steps](#notes--next-steps)
 
 ---
 
@@ -52,22 +62,6 @@ This project focuses on detecting fraud through two different models:
 
 ---
 
-## 3. Website Fraud Detection Model
-- **Approach**: URL-based feature extraction and classification
-- **Algorithms Considered**:
-  - Random Forest
-  - XGBoost
-  - KNN
-- **Libraries Used**:
-  - `Scikit-learn`
-- **Pipeline**:
-  1. Extract URL-based Features
-  2. Feature Engineering
-  3. Model Training & Tuning
-  4. Evaluation
-
----
-
 ## 4. Implementation Plan
 | Task | Assigned To | Deadline |
 |------|------------|----------|
@@ -87,12 +81,45 @@ This project focuses on detecting fraud through two different models:
 ---
 
 ## 6. References
-- [Tutorial 1: SVM](https://www.youtube.com/watch?v=Y6RRHw9uN9o)
+- [Tutorial 1: SVM](https://www.geeksforgeeks.org/classifying-data-using-support-vector-machinessvms-in-python/)
+- [Tutorial 2: SVM More](https://medium.com/@bedigunjit/simple-guide-to-text-classification-nlp-using-svm-and-naive-bayes-with-python-421db3a72d34)
 - [Tutorial 2: NLP Model Basics](https://medium.com/analytics-vidhya/natural-language-processing-nlp-workflow-tutorial-for-binary-classification-in-sci-kit-learn-b9f94c6aaf14)
 - [Tutorial 3: Multinomial Naive Bayes](https://www.youtube.com/watch?v=Thz4WzC3UdM)
-- [Dataset 2: URL-based Fraud Detection](#)
-
+- [Tutorial 4: Naive Bayes](https://www.geeksforgeeks.org/applying-multinomial-naive-bayes-to-nlp-problems/)
+- [Tutorial 5: Logistic Regression in Python](https://realpython.com/logistic-regression-python/#multi-variate-logistic-regression)
+- [Tutorial 6: Text Classification Using Linear Regression](https://www.geeksforgeeks.org/text-classification-using-logistic-regression/)
+- Logistic Regression Template:
+  ```
+  from sklearn.linear_model import LogisticRegression
+  from sklearn.preprocessing import StandardScaler
+  from sklearn.metrics import accuracy_score
+  
+  # Instantiate the transformer object
+  std_scaler = StandardScaler()
+  
+  # Fit to data (subtract mean and divide by SD for each column)
+  X = std_scaler.fit_transform(X)
+  
+  # Instantiate the model object
+  logit = LogisticRegression(fit_intercept = True, max_iter=1000, penalty = 'none')
+  
+  # Fit the model to the data
+  logit.fit(X, t.ravel()) # Use reval so array is passed to the function
+  
+  # Examine the coefficients and intercept
+  print('Logistic Regression Coefficients:\n',logit.coef_)
+  print('Intercept:\n', logit.intercept_)
+  
+  # Get fitted values from training set
+  t_train_preds_lr = logit.predict(X)
+  
+  # Print train and test errors
+  train_acc = accuracy_score(t, t_train_preds_lr)
+  
+  print('Train Accuracy: ',train_acc)
+  ```
 ---
 
 ## Notes & Next Steps
-- [Any additional comments or action items]
+- regex for emails: [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}
+- regex for textbody: (?:\r?\n\r?\n)([\s\S]+)
