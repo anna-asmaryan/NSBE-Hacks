@@ -1,4 +1,5 @@
-# Fraud Detection Project
+# Fraud Detection Project ![phishing-icon-48](https://github.com/user-attachments/assets/1ed687d1-5842-4246-8621-058389f16323)
+
 
 ## Team Members
 - Afra
