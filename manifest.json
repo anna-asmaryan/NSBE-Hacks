@@ -1,21 +1,24 @@
 {
-    "manifest_version": 2,
-    "name": "Phishing Email Detector",
+    "manifest_version": 3,
+    "name": "Phishing Email Detection",
+    "description": "Detect phishing emails",
     "version": "1.0",
-    "permissions": ["tabs", "<all_urls>", "storage"],
-    "background": { "scripts": ["background.js"] },
-    "browser_action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "icons/phishing-icon-16.png",
-        "48": "icons/phishing-icon-48.png",
-        "128": "icons/phishing-icon-128.png"
-      }
+    "permissions": ["activeTab"],
+    "background": {
+      "service_worker": "background.js"
     },
-    "icons": {
-      "16": "icons/phishing-icon-16.png",
-      "48": "icons/phishing-icon-48.png",
-      "128": "icons/phishing-icon-128.png"
-    }
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "host_permissions": [
+      "https://*/*",
+      "http://*/*"
+    ]
   }
   
