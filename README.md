@@ -109,4 +109,4 @@ This project focuses on detecting fraud through two different models:
 ---
 
 ## Notes & Next Steps
-- [Any additional comments or action items]
+- regex for emails: [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}
